@@ -6,6 +6,7 @@ Some older ones (but still quite popular) and some more recent ones. <br>
 All projects are made to display execution time in milliseconds, so that performance could be compared. <br>
 Operations include: trigonometry, vector math and data structure access. <br>
 Output to screen is not timed.<br>
+Shaders are not used.<br>
 <br>
 |engine|ms|
 |:---|---:|
