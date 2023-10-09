@@ -1,0 +1,25 @@
+
+ÕÐ#version 300 es
+precision mediump float;
+
+out vec4 _DMENGINE_GENERATED_gl_FragColor_0;
+in mediump vec2 var_texcoord0;
+in lowp vec4 var_face_color;
+
+uniform lowp sampler2D texture_sampler;
+
+void main()
+{
+    _DMENGINE_GENERATED_gl_FragColor_0 = texture(texture_sampler, var_texcoord0.xy) * var_face_color * var_face_color.a;
+}
+
+ƒþprecision mediump float;
+varying mediump vec2 var_texcoord0;
+varying lowp vec4 var_face_color;
+
+uniform lowp sampler2D texture_sampler;
+
+void main()
+{
+    gl_FragColor = texture2D(texture_sampler, var_texcoord0.xy) * var_face_color * var_face_color.a;
+}

@@ -1,0 +1,36 @@
+
+åà#version 300 es
+uniform highp mat4 view_proj;
+
+
+in highp vec4   position;
+in mediump vec2 texcoord0;
+in lowp float   page_index;
+
+out mediump vec2 var_texcoord0;
+out lowp float   var_page_index;
+
+void main()
+{
+    gl_Position    = view_proj * vec4(position.xyz, 1.0);
+    var_texcoord0  = texcoord0;
+    var_page_index = page_index;
+}
+
+úõprecision mediump float;
+uniform highp mat4 view_proj;
+
+
+attribute highp vec4   position;
+attribute mediump vec2 texcoord0;
+attribute lowp float   page_index;
+
+varying mediump vec2 var_texcoord0;
+varying lowp float   var_page_index;
+
+void main()
+{
+    gl_Position    = view_proj * vec4(position.xyz, 1.0);
+    var_texcoord0  = texcoord0;
+    var_page_index = page_index;
+}

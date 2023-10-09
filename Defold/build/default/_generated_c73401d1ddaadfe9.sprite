@@ -1,0 +1,4 @@
+tile_set: "/main/512x256/512x256.atlas"
+default_animation: "512x256"
+material: "/builtins/materials/sprite.material"
+blend_mode: BLEND_MODE_ALPHA

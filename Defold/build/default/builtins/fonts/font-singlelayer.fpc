@@ -1,0 +1,29 @@
+
+„ÿ#version 300 es
+precision mediump float;
+
+out vec4 _DMENGINE_GENERATED_gl_FragColor_0;
+in mediump vec2 var_texcoord0;
+in lowp vec4 var_face_color;
+in lowp vec4 var_outline_color;
+
+uniform lowp sampler2D texture_sampler;
+
+void main()
+{
+    lowp vec2 t  = texture(texture_sampler, var_texcoord0.xy).xy;
+    _DMENGINE_GENERATED_gl_FragColor_0 = vec4(var_face_color.xyz, 1.0) * t.x * var_face_color.w + vec4(var_outline_color.xyz * t.y * var_outline_color.w, t.y * var_outline_color.w) * (1.0 - t.x);
+}
+
+µ°precision mediump float;
+varying mediump vec2 var_texcoord0;
+varying lowp vec4 var_face_color;
+varying lowp vec4 var_outline_color;
+
+uniform lowp sampler2D texture_sampler;
+
+void main()
+{
+    lowp vec2 t  = texture2D(texture_sampler, var_texcoord0.xy).xy;
+    gl_FragColor = vec4(var_face_color.xyz, 1.0) * t.x * var_face_color.w + vec4(var_outline_color.xyz * t.y * var_outline_color.w, t.y * var_outline_color.w) * (1.0 - t.x);
+}

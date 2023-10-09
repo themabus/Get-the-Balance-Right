@@ -1,0 +1,30 @@
+
+þù#version 300 es
+uniform highp mat4 view_proj;
+
+
+in highp vec4 position;
+in mediump vec2 texcoord0;
+
+out mediump vec2 var_texcoord0;
+
+void main()
+{
+    gl_Position = view_proj * vec4(position.xyz, 1.0);
+    var_texcoord0 = texcoord0;
+}
+
+‹†precision mediump float;
+uniform highp mat4 view_proj;
+
+
+attribute highp vec4 position;
+attribute mediump vec2 texcoord0;
+
+varying mediump vec2 var_texcoord0;
+
+void main()
+{
+    gl_Position = view_proj * vec4(position.xyz, 1.0);
+    var_texcoord0 = texcoord0;
+}

@@ -1,0 +1,20 @@
+[bootstrap]
+main_collection = /main/main.collectionc
+
+[script]
+shared_state = 1
+
+[display]
+width = 320
+height = 240
+
+[android]
+input_method = HiddenInputField
+
+[project]
+title = RayTracer256
+
+[graphics]
+default_texture_min_filter = nearest
+default_texture_mag_filter = nearest
+

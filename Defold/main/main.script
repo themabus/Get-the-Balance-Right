@@ -1,0 +1,258 @@
+--320x240	 5429,  5425,  5869,  5708,  5723	<-- LuaJIT
+
+function init(self)
+	width = 320
+	height = 240
+	fov = 1.05 -- 60 degrees field of view in radians
+
+	jit.on()
+	print(_VERSION)
+	print(jit.version)
+	print("Go!")
+	time_start = os.clock() * 1000
+
+	out_size = width*height
+	time_step = 1000.0 / 60
+
+	framebuffer = {}
+	out = {}
+
+	lights = {}
+	spheres = {}
+
+	-- materials --->
+	mat = {
+		refractive_index = 1.0,
+		albedo = {2, 0, 0, 0},
+		diffuse_color = vmath.vector3(),
+		specular_exponent = 0
+	}
+	mat_white = {
+		refractive_index = 1.0,
+		albedo = {2, 0, 0, 0},
+		diffuse_color = vmath.vector3(.3, .3, .3),
+		specular_exponent = 0
+	}
+	mat_orange = {
+		refractive_index = 1.0,
+		albedo = {2, 0, 0, 0},
+		diffuse_color = vmath.vector3(.3, .2, .1),
+		specular_exponent = 0
+	}
+	ivory = {
+		refractive_index = 1.0,
+		albedo = {0.9, 0.5, 0.1, 0.0},
+		diffuse_color = vmath.vector3(0.4, 0.4, 0.3),
+		specular_exponent = 50.0
+	}
+	glass = {
+		refractive_index = 1.5,
+		albedo = {0.0, 0.9, 0.1, 0.8},
+		diffuse_color = vmath.vector3(0.6, 0.7, 0.8),
+		specular_exponent = 125.0
+	}
+	red_rubber = {
+		refractive_index = 1.0,
+		albedo = {1.4, 0.3, 0.0, 0.0},
+		diffuse_color = vmath.vector3(0.3, 0.1, 0.1),
+		specular_exponent = 10
+	}
+	mirror = {
+		refractive_index = 1.0,
+		albedo = {0.0, 16.0, 0.8, 0.0},
+		diffuse_color = vmath.vector3(1.0, 1.0, 1.0),
+		specular_exponent = 1425.0
+	}
+	-- <--- materials
+
+	-- spheres --->
+	spheres[1] = {
+		center =  vmath.vector3(-3, 0, -16),
+		radius = 2.0,
+		material = ivory
+	}
+	spheres[2] = {
+		center =  vmath.vector3(-1.0, -1.5, -12),
+		radius = 2.0,
+		material = glass
+	}
+	spheres[3] = {
+		center =  vmath.vector3(1.5, -0.5, -18),
+		radius = 3.0,
+		material = red_rubber
+	}
+	spheres[4] = {
+		center =  vmath.vector3(7, 5, -18),
+		radius = 4.0,
+		material = mirror
+	}
+	-- <--- spheres
+
+	-- lights --->
+	lights[1] = vmath.vector3(-20,20,20)
+	lights[2] = vmath.vector3(30,50,-25)
+	lights[3] = vmath.vector3(30,20,30)
+	-- <--- lights
+
+	stage = 0
+	pix = 0
+
+	t_width = 512
+	t_height = 256
+
+	self.buffer = buffer.create(t_width * t_height, { {name=hash("rgba"), type=buffer.VALUE_TYPE_UINT8, count=4} } )
+	self.stream = buffer.get_stream(self.buffer, hash("rgba"))
+
+	label.set_text("#label1", "")
+	label.set_text("#label2", "")
+end
+
+local function draw_pixel(self, x, y, r, g, b, a)
+	-- don't draw outside of the texture
+	if x < 0 or x > t_width or y < 0 or y > t_height then
+		return
+	end
+
+	-- draw the pixel at the correct index in the buffer stream
+	local index = (y * t_width * 4) + (x * 4) + 1
+	self.stream[index + 0] = r
+	self.stream[index + 1] = g
+	self.stream[index + 2] = b
+	self.stream[index + 3] = a or 0xff
+end
+
+function update(self, dt)
+	local t = os.clock() * 1000
+	
+	if stage == 0 then
+		local dir_z = -height/(2.0*math.tan(fov/2.0)) -- const
+		while pix < out_size do
+			local dir_x = (pix%width + 0.5) - width/2.0
+			local dir_y = -(pix/width + 0.5) + height/2.0
+			framebuffer[pix+1] = cast_ray(vmath.vector3(0,0,0), vmath.normalize(vmath.vector3(dir_x,dir_y,dir_z)))
+			pix = pix + 1
+			if (os.clock() * 1000) - t > time_step then
+				label.set_text("#label2", pix .. "/" .. out_size)
+				return
+			end
+		end
+		label.set_text("#label2", pix .. "/" .. out_size)
+		pix = 0
+		stage = stage + 1
+	elseif stage == 1 then -- unneccesary loops left in deliberately
+		while pix < out_size do
+			local color = framebuffer[pix+1]
+			local mx = math.max(1.0, math.max(color.x, math.max(color.y, color.z)))
+			out[pix+1] = vmath.vector4(255*color.x/mx, 255*color.y/mx, 255*color.z/mx, 255)
+			pix = pix + 1
+			if (os.clock() * 1000) - t > time_step then
+				return
+			end
+		end
+		stage = stage + 1
+		time_end = (os.clock() * 1000) - time_start
+		print(time_end)
+		label.set_text("#label2", time_end)
+	elseif stage == 2 then
+		pix = 0
+		for i = 0, height-1 do
+			for j = 0, width-1 do
+				draw_pixel(self, j,i, out[pix+1].x, out[pix+1].y, out[pix+1].z, out[pix+1].w)
+				pix = pix + 1
+			end
+		end
+		resource_path = go.get("#sprite", "texture0")
+		header = { width = t_width, height = t_height, type = resource.TEXTURE_TYPE_2D, format = resource.TEXTURE_FORMAT_RGBA, num_mip_maps = 1 }
+		resource.set_texture( resource_path, header, self.buffer )
+		label.set_text("#label1", "your score is and always has been")
+		stage = stage + 1
+	end
+end
+
+function cast_ray(orig, dir, depth)
+	depth = depth or 0
+
+	local hit, point, N, material = scene_intersect(orig, dir)
+
+	if depth>4 or not hit then 
+		return vmath.vector3(0.2, 0.7, 0.8) -- background color
+	end
+
+	local reflect_dir = vmath.normalize(reflect(dir, N))
+	local refract_dir = vmath.normalize(refract(dir, N, material.refractive_index))
+	local reflect_color = cast_ray(point, reflect_dir, depth + 1)
+	local refract_color = cast_ray(point, refract_dir, depth + 1)
+
+	local diffuse_light_intensity = 0
+	local specular_light_intensity = 0
+	
+	for _, light in ipairs(lights) do -- checking if the point lies in the shadow of the light
+		local light_dir = vmath.normalize(light - point)
+		local shadow_pt
+		hit, shadow_pt = scene_intersect(point, light_dir)
+		if hit and vmath.length(shadow_pt-point) < vmath.length(light-point) then goto continue end
+		diffuse_light_intensity = diffuse_light_intensity + math.max(0., vmath.dot(light_dir, N))
+		specular_light_intensity = specular_light_intensity + math.pow(math.max(0., vmath.dot(-reflect(-light_dir, N), dir)), material.specular_exponent)
+		::continue::
+	end
+
+	return material.diffuse_color * diffuse_light_intensity * material.albedo[1] + vmath.vector3(1., 1., 1.)*specular_light_intensity * material.albedo[2] + reflect_color*material.albedo[3] + refract_color*material.albedo[4]
+end
+
+function scene_intersect(orig, dir)
+	local pt = vmath.vector3()
+	local N = vmath.vector3()
+	local material = mat
+
+	local nearest_dist = 1e10
+	if math.abs(dir.y)>.001 then -- intersect the ray with the checkerboard, avoid division by zero
+		local d = -(orig.y+4)/dir.y -- the checkerboard plane has equation y = -4
+		local p = orig + dir*d
+		if d>.001 and d<nearest_dist and math.abs(p.x)<10 and p.z<-10 and p.z>-30 then
+			nearest_dist = d
+			pt = p
+			N = vmath.vector3(0,1,0)
+			material = bit.band(math.floor(.5*pt.x+1000) + math.floor(.5*pt.z), 1) == 0 and mat_white or mat_orange
+		end
+	end
+
+	for _, s in ipairs(spheres) do -- intersect the ray with all spheres
+		local intersection, d = ray_sphere_intersect(orig, dir, s)
+		if (not intersection or d > nearest_dist) then goto continue end
+		nearest_dist = d
+		pt = orig + dir * nearest_dist
+		N = vmath.normalize(pt - s.center)
+		material = s.material
+		::continue::
+	end
+
+	return nearest_dist<1000, pt, N, material
+end
+
+function ray_sphere_intersect(orig, dir, s) -- ret value is a pair [intersection found, distance]
+	local L = s.center - orig
+	local tca = vmath.dot(L, dir)
+	local d2 = vmath.dot(L, L) - tca*tca
+	if d2 > s.radius*s.radius then return false, 0 end
+	local thc = math.sqrt(s.radius*s.radius - d2)
+	local t0 = tca-thc
+	local t1 = tca+thc
+	if t0>.001 then return true, t0 end
+	if t1>.001 then return true, t1 end
+
+	return false, 0
+end
+
+function reflect(I, N)
+	return I - N * 2.0 * vmath.dot(I,N)
+end
+
+function refract(I, N, eta_t, eta_i) -- Snell's law
+	eta_i = eta_i or 1.0
+	local cosi = -math.max(-1.0, math.min(1.0, vmath.dot(I, N)))
+	if cosi<0 then return refract(I, -N, eta_i, eta_t) end -- if the ray comes from the inside the object, swap the air and the media
+	local eta = eta_i / eta_t
+	local k = 1 - eta*eta*(1 - cosi*cosi)
+
+	return k<0 and vmath.vector3(1,0,0) or I*eta + N*(eta*cosi - math.sqrt(k)) -- k<0 = total reflection, no ray to refract. I refract it anyways, this has no physical meaning
+end
