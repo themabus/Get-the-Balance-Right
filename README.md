@@ -2,7 +2,7 @@
 I ported this 256 line C++ [tinyraytracer](https://github.com/ssloy/tinyraytracer) by Mr. Dmitry V. Sokolov ([ssloy](https://github.com/ssloy)) <br>
 to several game engines that use higher level languages. <br>
 Some older ones (but still quite popular) and some more recent ones. <br>
-![original](https://github.com/themabus/Get-the-Balance-Right/assets/83443578/e0aac727-028f-43ad-9349-0f35cca5d44a)<br>
+![original](original.png)<br>
 All projects are made to display execution time in milliseconds, so that performance could be compared. <br>
 Operations include: trigonometry, vector math and data structure access. <br>
 Output to screen is not timed.<br>
