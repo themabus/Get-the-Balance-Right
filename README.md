@@ -14,7 +14,7 @@ Shaders are not used.<br>
 |<b>GML||
 |Game Maker 8.0|109000|
 |Enigma 0.0.5.0|65500|
-|<i>OpenGMK|64000|
+|`OpenGMK`|64000|
 |GameMaker Studio 1.4 (VM)|40900|
 |GameMaker Studio 1.4 (YYC)|7900|
 |GameMaker Studio 1.4 (HTML5)|2600|
@@ -26,8 +26,8 @@ Shaders are not used.<br>
 |RPG Maker XP (Ruby 1.8.1)|108000|
 |RPG Maker VX (Ruby 1.8.1)|84000|
 |RPG Maker VX Ace (Ruby 1.9.2)|18200|
-|<i>RGDirect 1.5.4|61500|
-|<i>MKXP-Z|40000|
+|`RGDirect 1.5.4`|61500|
+|`MKXP-Z`|40000|
 |<b>JavaScript||
 |RPG Maker MV 1.6.3 (clean)|2200|
 |<b>Python / Pythonlike||
@@ -37,8 +37,9 @@ Shaders are not used.<br>
 |<b>C#||
 |Godot 3.5.3 (C#)|660|
 |Godot 4.1.2 (C#)|230|
+* OpenGMK, RGDirect and MKXP are runtime replacements, that work with pre-assembled binaries.
 <br>
-These could also be useful as a 'Hello World!' programs, when moving from engine to engine<br>
+These projects could also be useful as a 'Hello World!' programs, when moving from engine to engine<br>
 and you want to familiarize yourself by jumping right in, instead of going through tutorials.<br>
 <br>
 Enjoy!<br>
