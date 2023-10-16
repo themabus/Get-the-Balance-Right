@@ -19,6 +19,9 @@ Shaders are not used.<br>
 |GameMaker Studio 1.4 (YYC)|7900|
 |GameMaker Studio 1.4 (HTML5)|2600|
 |GameMaker Studio 2.2.5 (VM)|38800|
+|<b>DIV||
+|BennuGD r348|15100|
+|PixTudio 2016.12.16|15800|
 |<b>Lua||
 |Defold 1.6.0 (LuaJIT 2.1.0-b3)|5500|
 |LÖVE 11.4 (LuaJIT 2.1.0-b3)|3700|
