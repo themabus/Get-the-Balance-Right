@@ -22,9 +22,8 @@ Shaders are not used.<br>
 |<b>DIV||
 |BennuGD r348|15100|
 |PixTudio 2016.12.16|15800|
-|<b>Lua||
-|Defold 1.6.0 (LuaJIT 2.1.0-b3)|5500|
-|LÖVE 11.4 (LuaJIT 2.1.0-b3)|3700|
+|<b>Basic / Basiclike||
+|Blitz3D	1.110|1200|
 |<b>Ruby||
 |RPG Maker XP (Ruby 1.8.1)|108000|
 |RPG Maker VX (Ruby 1.8.1)|84000|
@@ -33,6 +32,9 @@ Shaders are not used.<br>
 |`MKXP-Z`|40000|
 |<b>JavaScript||
 |RPG Maker MV 1.6.3 (clean)|2200|
+|<b>Lua||
+|Defold 1.6.0 (LuaJIT 2.1.0-b3)|5500|
+|LÖVE 11.4 (LuaJIT 2.1.0-b3)|3700|
 |<b>Python / Pythonlike||
 |Godot 3.5.3 (GDScript)|5700|
 |Godot 4.1.2 (GDScript)|4700|
