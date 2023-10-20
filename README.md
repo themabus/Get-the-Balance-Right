@@ -10,39 +10,39 @@ Shaders are not used.<br>
 <br>
 |engine|ms|open source|
 |:---|---:|:---:|
-|C++ (original - file output)|350|✅|
+|C++ (original - file output)|350|🌝|
 |<b>GML||
-|Game Maker 6.1|251400|❌|
-|Game Maker 8.0|109000|❌|
-|Enigma 0.0.5.0|65500|✅|
-|`OpenGMK`|64000|✅|
-|GameMaker Studio 1.4 (VM)|40900|❌|
-|GameMaker Studio 1.4 (YYC)|7900|❌|
-|GameMaker Studio 1.4 (HTML5)|2600|❌|
-|GameMaker Studio 2.2.5 (VM)|38800|❌|
+|Game Maker 6.1|251400|🌑|
+|Game Maker 8.0|109000|🌑|
+|Enigma 0.0.5.0|65500|🌝|
+|`OpenGMK`|64000|🌝|
+|GameMaker Studio 1.4 (VM)|40900|🌑|
+|GameMaker Studio 1.4 (YYC)|7900|🌑|
+|GameMaker Studio 1.4 (HTML5)|2600|🌑|
+|GameMaker Studio 2.2.5 (VM)|38800|🌑|
 |<b>DIV||
-|BennuGD r348|15100|✅|
-|PixTudio 2016.12.16|15800|✅|
+|BennuGD r348|15100|🌝|
+|PixTudio 2016.12.16|15800|🌝|
 |<b>Basic / Basiclike||
-|Blitz3D	1.110|1200|✅|
+|Blitz3D	1.110|1200|🌝|
 |<b>Ruby||
-|RPG Maker XP (Ruby 1.8.1)|108000|❌|
-|RPG Maker VX (Ruby 1.8.1)|84000|❌|
-|RPG Maker VX Ace (Ruby 1.9.2)|18200|❌|
-|`RGDirect 1.5.4`|61500|❌|
-|`MKXP-Z`|40000|✅|
+|RPG Maker XP (Ruby 1.8.1)|108000|🌑|
+|RPG Maker VX (Ruby 1.8.1)|84000|🌑|
+|RPG Maker VX Ace (Ruby 1.9.2)|18200|🌑|
+|`RGDirect 1.5.4`|61500|🌑|
+|`MKXP-Z`|40000|🌝|
 |<b>JavaScript||
-|RPG Maker MV 1.6.3 (clean)|2200|❌|
+|RPG Maker MV 1.6.3 (clean)|2200|🌑|
 |<b>Lua||
-|Defold 1.6.0 (LuaJIT 2.1.0-b3)|5500|🥨|
-|LÖVE 11.4 (LuaJIT 2.1.0-b3)|3700|✅|
+|Defold 1.6.0 (LuaJIT 2.1.0-b3)|5500|🌔|
+|LÖVE 11.4 (LuaJIT 2.1.0-b3)|3700|🌝|
 |<b>Python / Pythonlike||
-|Godot 3.5.3 (GDScript)|5700|✅|
-|Godot 4.1.2 (GDScript)|4700|✅|
-|Pygame 2.5.2 (Python 3.7.2)|4300|✅|
+|Godot 3.5.3 (GDScript)|5700|🌝|
+|Godot 4.1.2 (GDScript)|4700|🌝|
+|Pygame 2.5.2 (Python 3.7.2)|4300|🌝|
 |<b>C#||
-|Godot 3.5.3 (C#)|660|✅|
-|Godot 4.1.2 (C#)|230|✅|
+|Godot 3.5.3 (C#)|660|🌝|
+|Godot 4.1.2 (C#)|230|🌝|
 * OpenGMK, RGDirect and MKXP are runtime replacements, that work with pre-assembled binaries.
 <br>
 These projects could also be useful as a 'Hello World!' programs, when moving from engine to engine<br>
