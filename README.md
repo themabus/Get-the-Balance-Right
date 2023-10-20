@@ -12,6 +12,7 @@ Shaders are not used.<br>
 |:---|---:|:---:|
 |C++ (original - file output)|350|✅|
 |<b>GML||
+|Game Maker 6.1|251400|❌|
 |Game Maker 8.0|109000|❌|
 |Enigma 0.0.5.0|65500|✅|
 |`OpenGMK`|64000|✅|
