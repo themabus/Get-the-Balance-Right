@@ -45,7 +45,7 @@ Shaders are not used.<br>
 |<b>C#||
 |Godot 3.5.3 (C#)|660|🌝|
 |Godot 4.1.2 (C#)|230|🌝|
-* OpenGMK, RGDirect and MKXP are runtime replacements, that work with pre-assembled binaries.
+* OpenGMK, RGDirect and MKXP are runtime replacements for already assembled binaries.
 <br>
 These projects could also be useful as a 'Hello World!' programs, when moving from engine to engine<br>
 and you want to familiarize yourself by jumping right in, instead of going through tutorials.<br>
