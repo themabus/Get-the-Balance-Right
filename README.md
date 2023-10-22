@@ -1,12 +1,12 @@
 # Get-the-Balance-Right
-I ported this 256 line C++ [tinyraytracer](https://github.com/ssloy/tinyraytracer) by Mr. Dmitry V. Sokolov ([ssloy](https://github.com/ssloy)) <br>
-to several game engines that use higher level languages. <br>
-Some older ones (but still quite popular) and some more recent ones. <br>
+This is 256 line C++ [tinyraytracer](https://github.com/ssloy/tinyraytracer) by Mr. Dmitry V. Sokolov ([ssloy](https://github.com/ssloy)) ported to several higher level game engines.<br>
+Some older ones (but still quite popular) and some more recent ones.<br>
 ![original](original.png)<br>
-All projects are made to display execution time in milliseconds, so that performance could be compared. <br>
-Operations include: trigonometry, vector math and data structure access. <br>
-Output to screen is not timed.<br>
+All projects are made to display execution time in milliseconds, so that performance could be measured.<br>
+Operations include: trigonometry, vector math and data structure handling.<br>
+It is unoptimized - no lookup tables, no fixed-point, etc. which presents more life-like model.<br>
 Shaders are not used.<br>
+Drawing routines are not timed.<br>
 <br>
 |engine|ms|open source|
 |:---|---:|:---:|
