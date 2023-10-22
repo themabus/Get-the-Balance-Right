@@ -28,7 +28,7 @@ Drawing routines are not timed.<br>
 |<b>Basic / Basiclike||
 |Blitz3D	1.110|1200|🌝|
 |BlitzMax 1.50|600|🌝|
-|BlitzMax NG 0.136|1200|🌝|
+|BlitzMax NG 0.136|1000|🌝|
 |<b>Ruby||
 |RPG Maker XP (Ruby 1.8.1)|108000|🌑|
 |RPG Maker VX (Ruby 1.8.1)|84000|🌑|
