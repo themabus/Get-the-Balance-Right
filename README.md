@@ -4,7 +4,8 @@ Some older ones (but still quite popular) and some more recent ones.<br>
 ![original](original.png)<br>
 All projects are made to display execution time in milliseconds, so that performance could be measured.<br>
 Operations include: trigonometry, vector math and data structure handling.<br>
-It is unoptimized - no lookup tables, no fixed-point, etc. which presents more life-like model.<br>
+It is unoptimized - no lookup tables, no fixed-point, inlining, etc.<br>
+which presents more life-like model and evens the playg field.<br>
 Shaders are not used.<br>
 Drawing routines are not timed.<br>
 <br>
@@ -29,6 +30,10 @@ Drawing routines are not timed.<br>
 |Blitz3D	1.110|1200|🌝|
 |BlitzMax 1.50|600|🌝|
 |BlitzMax NG 0.136|1000|🌝|
+|Monkey-X 87a (GCC)|1800|🌝|
+|Monkey-X 87a (HTML5)|800|🌝|
+|Cerberus-X 2023-05-26 (GCC)|1800|🌝|
+|Cerberus-X 2023-05-26 (HTML5)|800|🌝|
 |AppGameKit 2023.01.26 (Tier 1)|47900|🌑|
 |<b>Ruby||
 |RPG Maker XP (Ruby 1.8.1)|108000|🌑|
