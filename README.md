@@ -5,7 +5,7 @@ Some older ones (but still quite popular) and some more recent ones.<br>
 All projects are made to display execution time in milliseconds, so that performance could be measured.<br>
 Operations include: trigonometry, vector math and data structure handling.<br>
 It is unoptimized - no lookup tables, no fixed-point, inlining, etc.,<br>
-which presents more life-like model and evens out the playg field.<br>
+which presents more life-like model and evens out the playing field.<br>
 Shaders are not used.<br>
 Drawing routines are not timed.<br>
 <br>
@@ -37,6 +37,8 @@ Drawing routines are not timed.<br>
 |Cerberus-X 2023-05-26 (HTML5)|800|🌝|
 |Monkey 2 2018.09|800|🌝|
 |Wonkey 2022.04|800|🌝|
+|<b>Pascal / Delphi||
+|ZenGL 0.3.12 (FPC 3.2.2)|700|🌝|
 |<b>Ruby||
 |RPG Maker XP (Ruby 1.8.1)|108000|🌑|
 |RPG Maker VX (Ruby 1.8.1)|84000|🌑|
