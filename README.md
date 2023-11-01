@@ -30,15 +30,15 @@ Drawing routines are not timed.<br>
 |AppGameKit 2023.01.26 (Tier 1)|47900|🌑|
 |Blitz3D	1.110|1200|🌝|
 |BlitzMax 1.50|600|🌝|
-|BlitzMax NG 0.136|1000|🌝|
+|BlitzMax NG 0.136|980|🌝|
 |Monkey-X 87a (GCC)|1800|🌝|
-|Monkey-X 87a (HTML5)|800|🌝|
+|Monkey-X 87a (HTML5)|750|🌝|
 |Cerberus-X 2023-05-26 (GCC)|1800|🌝|
-|Cerberus-X 2023-05-26 (HTML5)|800|🌝|
-|Monkey 2 2018.09|800|🌝|
+|Cerberus-X 2023-05-26 (HTML5)|780|🌝|
+|Monkey 2 2018.09|740|🌝|
 |Wonkey 2022.04|800|🌝|
 |<b>Pascal / Delphi||
-|ZenGL 0.3.12 (FPC 3.2.2)|700|🌝|
+|ZenGL 0.3.12 (FPC 3.2.2)|690|🌝|
 |<b>Ruby||
 |RPG Maker XP (Ruby 1.8.1)|108000|🌑|
 |RPG Maker VX (Ruby 1.8.1)|84000|🌑|
@@ -58,6 +58,7 @@ Drawing routines are not timed.<br>
 |Godot 3.5.3 (C#)|660|🌝|
 |Godot 4.1.2 (C#)|230|🌝|
 * OpenGMK, RGDirect and MKXP are runtime replacements for already assembled binaries.
+* Execution times below 1 sec. reported with higher precision.
 <br>
 These projects could also be useful as a 'Hello World!' programs, when moving from engine to engine<br>
 and you want to familiarize yourself by jumping right in, instead of going through tutorials.<br>
