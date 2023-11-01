@@ -39,6 +39,7 @@ Drawing routines are not timed.<br>
 |Wonkey 2022.04|800|16886|🌝|
 |<b>Pascal / Delphi|
 |ZenGL 0.3.12 (FPC 3.2.2)|690|315|🌝|
+|Castle Game Engine 7.0 (FPC 3.2.2)|200|16816|🌝|
 |<b>Ruby|
 |RPG Maker XP (Ruby 1.8.1)|108000|841|🌑|
 |RPG Maker VX (Ruby 1.8.1)|84000|162|🌑|
@@ -49,7 +50,7 @@ Drawing routines are not timed.<br>
 |RPG Maker MV 1.6.3 (clean)|2200|165968|🌑|
 |<b>Lua|
 |Defold 1.6.0 (LuaJIT 2.1.0-b3)|5500|7484|🌔|
-|LÖVE 11.4 (LuaJIT 2.1.0-b3)|3700|+11167|🌝|
+|LÖVE 11.4 (LuaJIT 2.1.0-b3)|3700|+love2d|🌝|
 |<b>Python / Pythonlike|
 |Godot 3.5.3 (GDScript)|5700|38105|🌝|
 |Godot 4.1.2 (GDScript)|4700|68727|🌝|
