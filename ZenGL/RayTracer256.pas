@@ -316,8 +316,6 @@ begin
       pix:=0;
       stage+=1;
       time_end := timer_GetTicks - time_start;
-      pix:=0;
-      stage+=1;
       tex_SetData(texture, @o, 0,0, width,height);
     end;
     else
