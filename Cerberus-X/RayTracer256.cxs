@@ -172,7 +172,7 @@ Class RayTracer256 Extends App
 			Case 1' unneccesary loops left in deliberately
 				While pix < out_size
 					Local mx:Float = Max(1.0, Max(framebuffer[pix].x, Max(framebuffer[pix].y, framebuffer[pix].z)))
-					out[pix] = 255 Shl 24 + Int(255*framebuffer[pix].x/mx) Shl 16 + Int(255*framebuffer[pix].y/mx) Shl 8 + 255*framebuffer[pix].z/mx
+					out[pix] = 255 Shl 24 + Int(255*framebuffer[pix].x/mx) Shl 16 + Int(255*framebuffer[pix].y/mx) Shl 8 + Int(255*framebuffer[pix].z/mx)
 					pix = pix + 1
 					If Millisecs() - t > time_step Then
 						Return 0
