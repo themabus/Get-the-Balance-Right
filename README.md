@@ -74,8 +74,9 @@ Drawing routines are not timed.<br>
 * Execution times below 1 sec. reported with higher precision.
 * Digital Mars C = Symantec C = Zortech C
 <br>
-I added for reference timings from MS DOS16/32 version using various compilers/extenders, <br>
-running on Am5x86, which is basically a beefed up 486. I'll probably come back to this<br>
+I added for reference timings from MS DOS16/32 version using various compilers and extenders, <br>
+running on Am5x86, which is basically a beefed up 486. They used to rate them as Pentium 75 ot 90,<br>
+but that was marketing - they were noticeably weaker than those. I'll probably come back to this<br>
 and update it with optimized version - lookup tables/fixed point math, which would be typical<br>
 for this hardware. Probably won't do assembler optimizations though.<br>
 <br>
