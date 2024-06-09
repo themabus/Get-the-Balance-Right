@@ -66,7 +66,7 @@ Drawing routines are not timed.<br>
 |Digital Mars C 8.5|36245|58|🌓|
 |Open Watcom C 2|30140|39|🌝|
 |<b>DOS32 on Am5x86 w/MetaWindow|
-|Borland C 4.5 (Power Pack)|24750|135|🌑|
+|Borland C 4.5 (Power Pack)|24750|345|🌑|
 |Microsoft C 8 (Phar Lap TNT)|21615|524|🌑|
 |Digital Mars C 8.5 (HX)|crash|495|🌓|
 |Open Watcom C 2 (DOS/4GW)|22495|588|🌝|
