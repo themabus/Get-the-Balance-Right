@@ -61,15 +61,15 @@ Drawing routines are not timed.<br>
 |Godot 3.5.3 (C#)|660|74623|🌝|
 |Godot 4.1.2 (C#)|230|144297|🌝|
 |<b>DOS16 on Am5x86 w/Fastgraph|
-|Borland C 4.5|34815|57|🌑|
-|Microsoft C 8|35750|38|🌑|
-|Digital Mars C 8.5|36245|58|🌓|
-|Open Watcom C 2|30140|39|🌝|
+|Borland C 4.5|28820|57|🌑|
+|Microsoft C 8|26070|37|🌑|
+|Digital Mars C 8.5|30030|58|🌓|
+|Open Watcom C 2|25190|40|🌝|
 |<b>DOS32 on Am5x86 w/MetaWindow|
-|Borland C 4.5 (Power Pack)|24750|345|🌑|
-|Microsoft C 8 (Phar Lap TNT)|21615|524|🌑|
-|Digital Mars C 8.5 (HX)|crash|495|🌓|
-|Open Watcom C 2 (DOS/4GW)|22495|588|🌝|
+|Borland C 4.5 (Power Pack)|21010|345|🌑|
+|Microsoft C 8 (Phar Lap TNT)|18150|524|🌑|
+|Digital Mars C 8.5 (HX)|crash|496|🌓|
+|Open Watcom C 2 (DOS/4GW)|18260|588|🌝|
 * OpenGMK, RGDirect and MKXP are runtime replacements for already assembled binaries.
 * Execution times below 1 sec. reported with higher precision.
 * Digital Mars C = Symantec C = Zortech C
