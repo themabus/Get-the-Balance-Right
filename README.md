@@ -23,8 +23,11 @@ Drawing routines are not timed.<br>
 |GameMaker Studio 1.4 (YYC)|7900|6139|🌑|
 |GameMaker Studio 1.4 (HTML5)|2600|1127|🌑|
 |GameMaker Studio 2.2.5 (VM)|38800|4939|🌑|
+|GameMaker Studio 2.2.5 (HTML5)|11500|1418|🌑|
 |GameMaker Studio 2023.8.1 (VM)|51000|12283|🌑|
 |GameMaker Studio 2023.8.1 (HTML5)|18100|2331|🌑|
+|GameMaker Studio 2024.8.1 (VM)|45400|12990|🌑|
+|GameMaker Studio 2024.8.1 (HTML5)|18100|2598|🌑|
 |<b>DIV|
 |BennuGD r348|15100|4366|🌝|
 |PixTudio 2016.12.16|15800|22346|🌝|
