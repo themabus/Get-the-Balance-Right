@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"vec3_norm",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"vec3_norm",
+  "parent":{
+    "name":"vec3",
+    "path":"folders/Scripts/vec3.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

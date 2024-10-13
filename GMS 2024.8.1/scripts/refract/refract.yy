@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"refract",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"refract",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
