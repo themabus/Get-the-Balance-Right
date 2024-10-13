@@ -63,6 +63,23 @@ Drawing routines are not timed.<br>
 |<b>C#|
 |Godot 3.5.3 (C#)|660|74623|🌝|
 |Godot 4.1.2 (C#)|230|144297|🌝|
+* OpenGMK, RGDirect and MKXP are runtime replacements for already assembled binaries.<br>
+* Execution times below 1 sec. reported with higher precision.<br>
+<br>
+These projects could also be useful as a 'Hello World!' programs, when moving from engine to engine<br>
+and you want to familiarize yourself by jumping right in, instead of going through tutorials.<br>
+<br>
+Enjoy!<br>
+<br><br>
+I added for reference timings from MS DOS16/32 version using various compilers and extenders, <br>
+running on Am5x86 133, which is basically a beefed up 486. They used to rate them as Pentium 75 or 90,<br>
+but that was largely marketing - they were noticeably weaker than those. I'll probably come back to this<br>
+and update it with optimized version - lookup tables/fixed point math, which would be typical<br>
+for this hardware. Probably won't do assembler optimizations though.<br>
+<br>
+
+|engine|time(ms)|size(kb)|open source|
+|:---|---:|---:|:---:|
 |<b>DOS16 on Am5x86 w/Fastgraph|
 |Borland C 4.5|28820|57|🌑|
 |Microsoft C 8|26070|37|🌑|
@@ -73,17 +90,5 @@ Drawing routines are not timed.<br>
 |Microsoft C 8 (Phar Lap TNT)|18150|524|🌑|
 |Digital Mars C 8.5 (HX)|crash|496|🌓|
 |Open Watcom C 2 (DOS/4GW)|18260|588|🌝|
-* OpenGMK, RGDirect and MKXP are runtime replacements for already assembled binaries.
-* Execution times below 1 sec. reported with higher precision.
 * Digital Mars C = Symantec C = Zortech C
 <br>
-I added for reference timings from MS DOS16/32 version using various compilers and extenders, <br>
-running on Am5x86 133, which is basically a beefed up 486. They used to rate them as Pentium 75 or 90,<br>
-but that was marketing - they were noticeably weaker than those. I'll probably come back to this<br>
-and update it with optimized version - lookup tables/fixed point math, which would be typical<br>
-for this hardware. Probably won't do assembler optimizations though.<br>
-<br>
-These projects could also be useful as a 'Hello World!' programs, when moving from engine to engine<br>
-and you want to familiarize yourself by jumping right in, instead of going through tutorials.<br>
-<br>
-Enjoy!<br>
