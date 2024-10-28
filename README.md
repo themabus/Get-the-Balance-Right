@@ -33,7 +33,6 @@ Drawing routines are not timed.<br>
 |PixTudio 2016.12.16|15800|22346|🌝|✔|
 |<b>Basic / Basiclike|
 |AppGameKit 2023.01.26 (Tier 1)|47900|7632|🌑|❌|
-|FreeBasic 1.10.1 (GCC 9.3.0)|390|140|🌝|✔|
 |Blitz3D	1.110|1200|1510|🌝|✔|
 |BlitzMax 1.50|600|1571|🌝|✔|
 |BlitzMax NG 0.136|980|3794|🌝|✔|
@@ -43,6 +42,7 @@ Drawing routines are not timed.<br>
 |Cerberus-X 2023-05-26 (HTML5)|780|488|🌝|✔|
 |Monkey 2 2018.09|740|14622|🌝|✔|
 |Wonkey 2022.04|800|16886|🌝|✔|
+|FreeBasic 1.10.1 (GCC 9.3.0)|390|140|🌝|✔|
 |<b>Pascal / Delphi|
 |ZenGL 0.3.12 (FPC 3.2.2)|690|315|🌝|✔|
 |Castle Game Engine 7.0 (FPC 3.2.2)|200|16816|🌝|✔|
