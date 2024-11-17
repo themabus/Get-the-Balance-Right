@@ -29,8 +29,8 @@ Drawing routines are not timed.<br>
 |GameMaker Studio 2024.8.1 (VM)|45400|12990|🌑|❌|
 |GameMaker Studio 2024.8.1 (HTML5)|18100|2598|🌑|❌|
 |<b>DIV|
-|BennuGD r348|15100|4366|🌝|✔|
-|PixTudio 2016.12.16|15800|22346|🌝|✔|
+|BennuGD r348|15100|4366|🌝|❌|
+|PixTudio 2016.12.16|15800|22346|🌝|❌|
 |<b>Basic / Basiclike|
 |AppGameKit 2023.01.26 (Tier 1)|47900|7632|🌑|❌|
 |Blitz3D	1.110|1200|1510|🌝|✔|
@@ -87,9 +87,9 @@ for this hardware. Probably won't do assembler optimizations though.<br>
 |Digital Mars C 8.5|30030|58|🌓|
 |Open Watcom C 2|25190|40|🌝|
 |<b>DOS32 on Am5x86 w/MetaWindow|
-|Borland C 4.5 (Power Pack)|21010|345|🌑|
-|Microsoft C 8 (Phar Lap TNT)|18150|524|🌑|
+|Borland C 4.5 (Power Pack)|19470|345|🌑|
+|Microsoft C 8 (Phar Lap TNT)|16060|524|🌑|
 |Digital Mars C 8.5 (HX)|crash|496|🌓|
-|Open Watcom C 2 (DOS/4GW)|18260|588|🌝|
+|Open Watcom C 2 (DOS/4GW)|17215|588|🌝|
 * Digital Mars C = Symantec C = Zortech C
 <br>
