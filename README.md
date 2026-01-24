@@ -96,13 +96,13 @@ for this hardware. Probably won't do assembler optimizations though.<br>
 <br>
 
 Some console binaries (unoptimized/floating point/full math)
-|engine|time(ms)|
-|:---|---:|
+|engine|time(ms)|notes|
+|:---|---:|:---|
 |<b>Dreamcast (nullDC NTSC/60fps)|
-|BennuGD|5805297|
+|BennuGD|5805297|96.75 minutes|
 |<b>PlayStation 2 (PCSX2 NTSC/60fps)|
-|BennuGD|16313276|
+|BennuGD|16313276|4.5 hours|
 |<b>PlayStation Portable (PPSSPP NTSC/60fps)|
-|BennuGD|395119|
-|Game Maker|2173000|
+|BennuGD|395119|6.58 minutes|
+|Game Maker|2173000|marginally working; has memory leaks|
 <br>
