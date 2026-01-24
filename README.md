@@ -94,3 +94,15 @@ for this hardware. Probably won't do assembler optimizations though.<br>
 |Open Watcom C 2 (DOS/4GW)|17215|588|🌝|
 * Digital Mars C = Symantec C = Zortech C
 <br>
+
+Some console binaries (unoptimized/floating point/full math)
+|engine|time(ms)|
+|:---|---:|
+|<b>Dreamcast (nullDC NTSC/60fps)|
+|BennuGD|5805297|
+|<b>PlayStation 2 (PCSX2 NTSC/60fps)|
+|BennuGD|16313276|
+|<b>PlayStation Portable (PPSSPP NTSC/60fps)|
+|BennuGD|395119|
+|Game Maker|2173000|
+<br>
