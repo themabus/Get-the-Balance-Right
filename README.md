@@ -58,6 +58,7 @@ Drawing routines are not timed.<br>
 |Defold 1.6.0 (LuaJIT 2.1.0-b3)|5500|7484|🌔|✔❌|
 |LÖVE 11.4 (LuaJIT 2.1.0-b3)|3700|+love2d|🌝|✔✔|
 |<b>Python / Pythonlike|
+|Godot 2.1.6 (GDScript)|6200|17141|🌝|✔❌|
 |Godot 3.5.3 (GDScript)|5700|38105|🌝|✔❌|
 |Godot 4.1.2 (GDScript)|4700|68727|🌝|✔❌|
 |Pygame 2.5.2 (Python 3.7.2)|4300|+python|🌝|✔❌|
@@ -103,6 +104,7 @@ Some console binaries (unoptimized/floating point/full math)
 |<b>PlayStation 2 (PCSX2 NTSC/60fps)|
 |BennuGD|16313276|4.5 hours|
 |<b>PlayStation Portable (PPSSPP NTSC/60fps)|
+|Godot|305256|5.08 minutes|
 |BennuGD|395119|6.58 minutes|
-|Game Maker|2173000|marginally working; has memory leaks|
+|Game Maker|2162000|working marginally; has memory leaks|
 <br>
