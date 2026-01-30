@@ -94,7 +94,7 @@ for this hardware. Probably won't do assembler optimizations though.<br>
 |Digital Mars C 8.5 (HX)|crash|496|🌓|
 |Open Watcom C 2 (DOS/4GW)|17215|588|🌝|
 |FreeBasic (CWSDPMI)|19000|257|🌝|
-|FreeBasic (CWSDPMI) optimized|4060|251|🌝|
+|FreeBasic (CWSDPMI) optimized|3900|258|🌝|
 * Digital Mars C = Symantec C = Zortech C
 <br>
 
