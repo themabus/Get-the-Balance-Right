@@ -93,6 +93,8 @@ for this hardware. Probably won't do assembler optimizations though.<br>
 |Microsoft C 8 (Phar Lap TNT)|16060|524|🌑|
 |Digital Mars C 8.5 (HX)|crash|496|🌓|
 |Open Watcom C 2 (DOS/4GW)|17215|588|🌝|
+|FreeBasic (CWSDPMI)|19000|257|🌝|
+|FreeBasic (CWSDPMI) optimized|4060|251|🌝|
 * Digital Mars C = Symantec C = Zortech C
 <br>
 
