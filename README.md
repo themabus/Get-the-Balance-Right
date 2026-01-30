@@ -56,7 +56,7 @@ Drawing routines are not timed.<br>
 |RPG Maker MV 1.6.3 (clean)|2200|165968|🌑|✔✔|
 |<b>Lua|
 |Defold 1.6.0 (LuaJIT 2.1.0-b3)|5500|7484|🌔|✔❌|
-|LÖVE 11.4 (LuaJIT 2.1.0-b3)|3700|+love2d|🌝|✔✔|
+|LÖVE 11.4 (LuaJIT 2.1.0-b3)|3700|+love2d|🌝|✔❌|
 |<b>Python / Pythonlike|
 |Godot 2.1.6 (GDScript)|6200|17141|🌝|✔❌|
 |Godot 3.5.3 (GDScript)|5700|38105|🌝|✔❌|
@@ -78,7 +78,7 @@ running on Am5x86 133, which is basically a beefed up 486. They used to rate the
 but that was largely marketing - they were noticeably weaker than those. I'll probably come back to this<br>
 and update it with optimized version - lookup tables/fixed point math, which would be typical<br>
 for this hardware. Probably won't do assembler optimizations though.<br>
-<ins>Update</ins>: got optimized 32bit version down to <ins>4060</ins><br>
+<ins>Update</ins>: got optimized 32bit version down to <ins>3900</ins><br>
 <br>
 
 |engine|time(ms)|size(kb)|open source|
